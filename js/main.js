@@ -8,7 +8,7 @@ document
 document.querySelector("#saladButton").addEventListener("click", showSalads);
 document.querySelector(".onlineOrder").addEventListener("click", orderOnline);
 
-// Function to remove all classes
+// Remove "hidden" class
 function removeClasses() {
   let images = document.querySelectorAll(".menuItemImg");
 
@@ -52,7 +52,6 @@ function showEntrees() {
   hideSalads();
   let entrees = document.querySelectorAll(".entreeItem");
 
-  // Loop through the elements.
   entrees.forEach((entree) => {
     entree.classList.remove("hidden");
   });
@@ -64,7 +63,6 @@ function showAppetizers() {
   hideSalads();
   let appetizers = document.querySelectorAll(".appetizerItem");
 
-  // Loop through the elements.
   appetizers.forEach((appetizer) => {
     appetizer.classList.remove("hidden");
   });
@@ -75,7 +73,6 @@ function showDesserts() {
   hideSalads();
   let desserts = document.querySelectorAll(".dessertItem");
 
-  // Loop through the elements.
   desserts.forEach((dessert) => {
     dessert.classList.remove("hidden");
   });
@@ -120,7 +117,6 @@ document.addEventListener("scroll", () => {
 });
 
 //Scroll to top when "Back to top" button is clicked
-
 const scrollToTop = () => {
   document.body.scrollIntoView();
 };
